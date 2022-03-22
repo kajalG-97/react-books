@@ -4,22 +4,16 @@ export const Navbar = () => {
   return (
     <>
       <Text className="navbar">
-        <button onClick={() =>{
-           Navigate("/");
-         }}>Home</button>
-         <button onClick={() =>{
-          Navigate ("/section/Mystery");
-         }}>Mystery</button>
-         <button onClick={() =>{
-           Navigate("/section/Technology");
-         }}>Technology</button>
-         <button onClick={() =>{
-           Navigate("/section/Mythology");
-         }}>Mythology</button>
-         <button onClick={() =>{
-           Navigate("/section/history");
-         }}>Histroy</button>
+        
          
+         
+         
+         
+        <Link to={"/"}><button>Home</button></Link>
+        <Link to={"/section/:Mystery"}><button>Mystery</button></Link>
+        <Link to={"/section/:Technology"}><button>Technology</button></Link>
+        <Link to={"/section/:Mythology"}><button>Mythology</button></Link>
+        <Link to={"/section/:History"}><button >History</button></Link>
         {/* Populate 5 buttons with EXACT same classnames as of their routes name */}
         {/* Example: 
             <button className="history"> Link to history here  </button>  */}

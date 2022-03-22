@@ -95,7 +95,7 @@
             ],
             "author": "Beck Zywicki",
             "price": 1949,
-            "section": "history",
+            "section": "History",
             "isbnNumber": 28260
         },
         {
@@ -165,7 +165,7 @@
             ],
             "author": "Britni Geeritz",
             "price": 1965,
-            "section": "history",
+            "section": "History",
             "isbnNumber": 16232
         },
         {
@@ -179,7 +179,7 @@
             ],
             "author": "Tomkin Primarolo",
             "price": 697,
-            "section": "history",
+            "section": "History",
             "isbnNumber": 2282
         },
         {
@@ -333,11 +333,11 @@
             ],
             "author": "Ruthann Witchell",
             "price": 3397,
-            "section": "history",
+            "section": "History",
             "isbnNumber": 13133
         },
         {
-            "id": 24,
+            "id": 25,
             "title": "Carmine bee-eater",
             "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu1TflCyfWDMNu6q7hVfgolfdYix7qE377UQ&usqp=CAU",
             "description": "A book is a medium for recording information in the form of writing or images, typically composed of many pages bound together and protected by a cover.",
@@ -347,7 +347,7 @@
             ],
             "author": "Paul Simonini",
             "price": 3234,
-            "section": "history",
+            "section": "History",
             "isbnNumber": 31967
         }
     ]

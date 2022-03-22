@@ -48,20 +48,6 @@ export const Home = () => {
 
         {data.map((el) => {
           return <BookCard key={el.id} id={el.id} title={el.title} price={el.price} imageUrl={el.imageUrl}/>
-          // return (
-          //   <div>
-             
-          //       <div>
-
-          //         <img src={el.imageUrl} />
-          //         <h1>{el.title}</h1>
-          //         <h3>Price: {el.price}</h3>
-
-            
-
-          //     </div>
-          //   </div>
-          // )
         })
         }
       </DIV>

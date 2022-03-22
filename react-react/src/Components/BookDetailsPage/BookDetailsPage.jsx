@@ -19,7 +19,7 @@ export const BookDetailsPage = () => {
   return (
     <Div>
       {details.map((e) => {
-        return <div className="bookContainer">
+        return <div key={e.id}className="bookContainer">
         <h2 className="title">{e.title}</h2>
         <img className="image" src={e.imageUrl} alt="#" />
         <div className="author">{e.author}</div>
@@ -28,9 +28,9 @@ export const BookDetailsPage = () => {
         <div className="section">{e.section}</div>
         <div className="isbnNumber">{e.isbnNumber}</div>
         <ul className="reviews">
-            {e.reviews.map((ele) => {
+            {e.reviews.map((ele,i) => {
             
-           return <li>{ele}</li>
+           return <li key={i}>{ele}</li>
           })}
           {/* Reviews will be an array, iterate over them and create a new <li> for every review */}
         </ul>
