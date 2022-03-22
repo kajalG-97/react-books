@@ -11,6 +11,7 @@ export const AllRoutes = () => {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route exaxt path="/bookdetailspage/:id" element={<BookDetailsPage />} />
         {/* Create other routes here: Section, bookdetailspage and 404 */}
         {/*  */}
       </Routes>
