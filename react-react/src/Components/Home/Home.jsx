@@ -12,11 +12,11 @@ export const Home = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios.get("http://localhost:8088/books").then((response) => {
-      setData([...response.data]);
-      console.log('response', response);
+      setData(response.data);
 
     });
   }, []);
+  console.log('data', data);
 
 
   const Main = styled.div`
@@ -32,10 +32,22 @@ export const Home = () => {
     <div className="homeContainer">
       <h2 style={{ textAlign: "center" }}>Home</h2>
       <SortAndFilterButtons
-        handleSort={
-          "give handleSort function to this component, that sorts books"
-        }
+
+        const handleSort={data.map((el) => {
+          console.log('e', el.price);
+          
+          if (el.price === "sortByPriceAsc") {
+            
+            setData([...data.sort((a, b) => a.price - b.price)]);
+          } else if (el.price === "sortByPriceDesc") {
+            setData([...data.sort((a, b) => a.price - b.price)]);
+          } else if (el.title === "SortBytitleAsc") {
+            setData([...data.sort((a, b) => b.title - a.title)]);
+          }
+        })
+      }
       />
+     
 
       <DIV className="mainContainer">
         {/* 
@@ -47,7 +59,7 @@ export const Home = () => {
         */}
 
         {data.map((el) => {
-          return <BookCard key={el.id} id={el.id} title={el.title} price={el.price} imageUrl={el.imageUrl}/>
+          return <BookCard key={el.id} id={el.id} title={el.title} price={el.price} imageUrl={el.imageUrl} />
         })
         }
       </DIV>

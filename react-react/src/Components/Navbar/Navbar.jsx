@@ -5,9 +5,7 @@ export const Navbar = () => {
     <>
       <Text className="navbar">
         
-         
-         
-         
+       
          
         <Link to={"/"}><button>Home</button></Link>
         <Link to={"/section/:Mystery"}><button>Mystery</button></Link>

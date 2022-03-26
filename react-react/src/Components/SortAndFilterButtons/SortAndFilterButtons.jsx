@@ -1,6 +1,8 @@
+import { Text } from "../style";
+
 export const SortAndFilterButtons = ({ handleSort }) => {
   return (
-    <div className="sortButtons">
+    <Text className="sortButtons">
       {/*
         Create 4 sorting buttons here to sort by following criteria:
 
@@ -14,6 +16,12 @@ export const SortAndFilterButtons = ({ handleSort }) => {
         and sort the data.
 
       */}
-    </div>
+      <button className="sortByTitleAsc" onClick={()=>handleSort()}>sortByTitleAsc</button>
+      <button className="sortByTitleDesc" onClick={()=>handleSort()}>sortByTitleDesc</button>
+      <button className="sortByPriceAsc" onClick={()=>handleSort()}>sortByPriceAsc</button>
+      <button className="sortByPriceDesc" onClick={()=>handleSort()}>sortByPriceDesc</button>
+      
+
+    </Text>
   );
 };

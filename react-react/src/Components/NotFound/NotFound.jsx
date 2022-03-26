@@ -3,8 +3,9 @@
 export const NotFound = () => {
   return (
     <div className="notFound">
+      {/* <h1>zsxdfcgvhbjnkml</h1> */}
       {/* Show some 404 not found image or component here */}
-      <img src="https://cdn4.vectorstock.com/i/1000x1000/85/43/error-page-not-found-vector-27898543.jpg"/>
-    </div>
+      <img src="https://kinsta.com/wp-content/uploads/2018/08/funny-404-page.jpg" alt="pic" />
+      </div>
   );
 };

@@ -14,7 +14,7 @@ export const AllRoutes = () => {
         <Route exaxt path="/bookdetailspage/:id" element={<BookDetailsPage />} />
         <Route exact path="/section/:section" element={<Section/>} />
         {/* Create other routes here: Section, bookdetailspage and 404 */}
-        {/*  */}
+        <Route  path="*" element={<NotFound/>}/>
       </Routes>
     </>
   );
