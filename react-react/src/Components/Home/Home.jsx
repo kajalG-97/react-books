@@ -27,25 +27,27 @@ export const Home = () => {
     
     
   `;
+  const sorting = (el) => {
+    console.log('e', el.target.className);
+
+    if (el.target.className === "sortByPriceAsc") {
+
+      setData([...data.sort((a, b) => a.price - b.price)]);
+    } else if (el.target.className === "sortByPriceDesc") {
+      setData([...data.sort((a, b) => a.price - b.price)]);
+    } else if (el.target.className === "SortBytitleAsc") {
+      setData([...data.sort((a, b) => a.title - b.title)]);
+    } else if (el.target.className === "SortBytitleDesc") {
+      setData([...data.sort((a, b) => b.title - a.title)]);
+    }
+  }
 
   return (
     <div className="homeContainer">
       <h2 style={{ textAlign: "center" }}>Home</h2>
       <SortAndFilterButtons
 
-        const handleSort={data.map((el) => {
-          console.log('e', el.price);
-          
-          if (el.price === "sortByPriceAsc") {
-            
-            setData([...data.sort((a, b) => a.price - b.price)]);
-          } else if (el.price === "sortByPriceDesc") {
-            setData([...data.sort((a, b) => a.price - b.price)]);
-          } else if (el.title === "SortBytitleAsc") {
-            setData([...data.sort((a, b) => b.title - a.title)]);
-          }
-        })
-      }
+         handleSort={sorting}
       />
      
 

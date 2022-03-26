@@ -26,6 +26,21 @@ export const Section = () => {
     /* Same as Homepage */
   `;
 
+  const sorting = (el) => {
+    console.log('e', el.target.className);
+
+    if (el.target.className === "sortByPriceAsc") {
+
+      setDetails([...details.sort((a, b) => a.price - b.price)]);
+    } else if (el.target.className === "sortByPriceDesc") {
+      setDetails([...details.sort((a, b) => a.price - b.price)]);
+    } else if (el.target.className === "SortBytitleAsc") {
+      setDetails([...details.sort((a, b) => a.title - b.title)]);
+    } else if (el.target.className === "SortBytitleDesc") {
+      setDetails([...details.sort((a, b) => b.title - a.title)]);
+    }
+  }
+
   return (
     <>
       <h2 style={{ textAlign: "center" }}>
@@ -33,7 +48,7 @@ export const Section = () => {
           //   Show section name here
         }
       </h2>
-      <SortAndFilterButtons handleSort={"give sorting function to component"} />
+      <SortAndFilterButtons handleSort={sorting} />
 
       <DIV className="sectionContainer">
         {details.map((el) => {

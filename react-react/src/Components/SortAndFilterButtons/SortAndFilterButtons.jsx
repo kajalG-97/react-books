@@ -16,10 +16,10 @@ export const SortAndFilterButtons = ({ handleSort }) => {
         and sort the data.
 
       */}
-      <button className="sortByTitleAsc" onClick={()=>handleSort()}>sortByTitleAsc</button>
-      <button className="sortByTitleDesc" onClick={()=>handleSort()}>sortByTitleDesc</button>
-      <button className="sortByPriceAsc" onClick={()=>handleSort()}>sortByPriceAsc</button>
-      <button className="sortByPriceDesc" onClick={()=>handleSort()}>sortByPriceDesc</button>
+      <button className="sortByTitleAsc" onClick={handleSort}>sortByTitleAsc</button>
+      <button className="sortByTitleDesc" onClick={handleSort}>sortByTitleDesc</button>
+      <button className="sortByPriceAsc" onClick={handleSort}>sortByPriceAsc</button>
+      <button className="sortByPriceDesc" onClick={handleSort}>sortByPriceDesc</button>
       
 
     </Text>
